@@ -8,6 +8,38 @@
 		  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
 		  <link rel="stylesheet" type="text/css" href="css/style.css"/>
 		  <script  src="bootstrap/bootstrap.min"></script>
+		  <script	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#btn").click(function(){
+        $("#panel").slideDown("slow");
+    });	
+});
+$(document).ready(function()
+{
+$("#panel").click(function()
+	{
+	$("#panel").slideUp("slow");
+	});
+});
+</script>
+<script type="text/javascript" language="javascript">
+ 
+      window.onload = function() {
+          document.getElementById("Button6").onmouseover = function()
+          {
+              this.style.backgroundColor = "#454545";
+          }
+ 
+          document.getElementById("Button6").onmouseout = function()
+          {
+              this.style.backgroundColor = "#8EEB03";
+          }
+      }
+ 
+
+  </script>
+
 		</head>
 
 		<body>
@@ -94,19 +126,26 @@
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tempor enim. Aliquam facilisis neque non nunc posuere eget volutpat metus tincidunt
 						</p>
-					<div class="button_small">
-						<a href="#">Read more</a>
+					<div class="button_small" >
+						Read more
 					</div><!--button_small-->
+				<!--	<div>
+					<button class="normal" id="Button6">Some text</button>
+					</div>
 				</div><!--content_container-->
 		
 		<div class="content_container">
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tempor enim. Aliquam facilisis neque non nunc posuere eget volutpat metus tincidunt
 			</p>
-			<div class="button_small">
-				<a href="#">Read More</a>
-			</div><!--button_small-->
-		</div><!--content_container-->
+			<div class="button_small" id="btn">
+				Read More
+				</div><!--button_small-->
+				<!--<div id="flip">Press Me</div>-->
+				<div id="panel" style="display:none;background-color:green;
+				position:absolute;margin-top:35px;high:40px;border-radius:5px 5px 5px 5px;">After button was push you see more details </div>
+			
+		</div><!--content_container--> 
 		</div><!--content_item-->
 		</div><!--content-->
 		</div><!--site_content-->
